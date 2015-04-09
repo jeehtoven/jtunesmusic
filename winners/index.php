@@ -4,7 +4,7 @@
 </script>
 </head>
 <style>
-body {background-image:url('cover.jpg');background-repeat:no-repeat;background-attachment:scroll;background-size:700px 700px;background-position:center top}
+body {background-image:url('cover.jpg');background-repeat:no-repeat;background-color: #000000;background-attachment:scroll;background-size:700px 700px;background-position:center top}
 </style>
 <body>
 <?php
@@ -28,7 +28,7 @@ foreach ($files1 as $file) {
 	
 	
 	//Create a link for each file in directory and a Play button
-	echo "<p align='right'><font face='verdana' size='3'><a href='" . $file . "'>" . $file . "</a>&nbsp;&nbsp;<button id='".$file."'>Play</button></font></p>";
+	echo "<p align='right'><font face='verdana' size='3' color='white'><a href='" . $file . "'>" . $file . "</a>&nbsp;&nbsp;<button id='".$file."'>Play</button></font></p>";
 	
 	//Logic to play whatever song user clicks on
 	echo "<script>\$(document).ready(function(){\$('button').click(function(){var id = $(this).attr('id');document.getElementById('player').src = id;});});</script>";
@@ -49,8 +49,8 @@ $rand_num = rand(1,$real_count);
 echo "<br><br<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><center><font face='verdana'><a href='" . substr(strrchr($dir,"/"),0) . ".zip'><img src='download.gif' alt='Download Now!' length='100' width='100'></a></font></center><br><br>";
 
 //Album information
-echo "<br><br><center><font face='verdana'>There are " . $real_count . " tracks in this album.</font></center><br>";
-echo "<center><font face='verdana'>Now Playing: <b><i>" . $files1[$rand_num] . "</b></i></font></center><br><br>";
+echo "<br><br><center><font face='verdana' color='white'>There are " . $real_count . " tracks in this album.</font></center><br>";
+echo "<center><font face='verdana' color='white'>Now Playing: <b><i>" . $files1[$rand_num] . "</b></i></font></center><br><br>";
 ?>
 <br><br>
 <center><audio id='player' autoplay='autoplay' controls='controls'><source id='trackname' src='<?php echo $files1[$rand_num]?>' type='audio/mpeg' >Your browser does not support audio.</audio></center>

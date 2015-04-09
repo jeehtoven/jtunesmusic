@@ -45,7 +45,7 @@
 				<span class="right_ab">
 					<a href="http://www.twitter.com/jeehtoven/" target="_blank">music by jeehtoven</a>
 					<a href="mailto:me@jeehtoven.com?subject:website matters">CONTACT</a>
-					<a href="http://jeehtoven.com"><strong>launch jeehtoven.com</strong></a>
+					<a href="http://jeehtoven.com"><strong>jeehtoven.com</strong></a>
 				</span>
 				<div class="clr"></div>
 			</div><!-- header -->
